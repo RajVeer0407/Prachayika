@@ -1,0 +1,174 @@
+.wed {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+
+
+.wed-text h1 {
+    position: absolute;
+    top: 32%;
+    color: white;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* .wed-text-1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.homei a{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+} */
+
+.killer {
+    text-align: start;
+    font-size: 16px;
+    margin-left: 20%;
+}
+
+.killer h2 {
+    margin: 0px;
+    margin-bottom: 18px;
+    font-size: 31px;
+}
+
+.imagic {
+    height: 373px;
+    width: 243px;
+    border-radius: 16px;
+    /* margin-left: 547px; */
+    display: inline-block;
+    float: right;
+    padding: 5px;
+}
+
+.textin {
+    /* width: 542px; */
+}
+
+.sidebar-widget {
+    top: 79px;
+    left: 10px;
+    font-size: 15px;
+    text-align: start;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+}
+
+.sidebar-title-two {
+    /* margin-bottom: 7px; */
+    margin-top: 14px;
+    color: #fff;
+    background: black;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-row-gap: 14px;
+}
+
+.sidebar-title-two h4 {
+    font-size: 25px;
+}
+
+.tharki ul li a {
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+}
+
+.tharki ul li {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+    transition: 0.5;
+    width: 100%;
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, .1); */
+}
+
+.tharki ul li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background: #9fe3d6;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.tharki ul {
+    position: relative;
+    background: #fff;
+}
+
+.vilen {
+    position: relative;
+    width: 100%;
+    min-height: 139vh;
+    padding: 2rem;
+    background-color: #e1f7f2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .wed {}
+
+    .sidebar-widget {
+        /* display: none; */
+        margin-left: 18%;
+        top: 2094px;
+    }
+
+    .wed-text h1 {
+        left: 50%;
+        top: 162px;
+    }
+
+    .killer h2 {
+        text-align: center;
+        font-size: 16px;
+        font-size: 31px;
+        margin-left: -58px;
+    }
+
+    .imagic {
+        width: 118%;
+    }
+
+    .key {
+        font-size: 15px;
+        /* width: 100%; */
+        margin-left: -40px;
+    }
+
+    .vilen {
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        padding: 2rem;
+        background-color: #e1f7f2;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

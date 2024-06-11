@@ -1,0 +1,107 @@
+.main {
+    margin: 2%;
+}
+
+.card123{
+    /* width: 23%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    margin: 4%; */
+    width: 32%;
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    /* padding: 1rem 0.8rem; */
+    margin: 5.5px; 
+    display: inline-block;
+}
+
+.banner-2{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+
+.serv-text h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;   
+    position: absolute;
+    top: 30%;
+    padding-left: 0;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 100%;     
+}
+
+
+.image10 img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    color: black;
+}
+
+.des {
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:850px) {
+    .main{
+        margin: 4rem 2rem;
+    }
+    
+
+    .card123{
+        width: 100%;
+        margin-bottom: 1.5rem 
+    }
+
+    .banner-2{
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+        filter: brightness(.5);
+    }
+
+    .serv-text h2{
+        padding-left: 85px;
+    }
+    
+
+}

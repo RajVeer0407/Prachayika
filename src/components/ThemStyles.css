@@ -1,0 +1,33 @@
+.enentee{
+    margin: 200px;
+}
+
+.event-content{
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.3) , inset 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    background: #fff !important;
+    margin-top: -70px !important;
+    margin-left: 20px !important;
+    position: absolute;
+}
+
+.event-content h4{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.event-content span{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.event img{
+    transition: 0.6s;
+}
+
+.event img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

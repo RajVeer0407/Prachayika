@@ -1,0 +1,7 @@
+{
+    "git.enabled": true,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": false
+    }
+}

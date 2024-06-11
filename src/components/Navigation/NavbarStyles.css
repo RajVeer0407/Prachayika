@@ -1,0 +1,39 @@
+/* .snavbar{
+    background-color: #63a73e;
+}
+
+.nav-container{
+    padding: 1rem;
+    height: 70px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+} */
+
+/* .s-navbar h2{
+    font-size: 1rem;
+} */
+
+/* .right-nav{
+    display: flex;
+  gap: 2rem;
+} */
+.kkkk{
+    width: 10%;
+    align-items: flex-start;
+    display: flex;
+    margin-top: 16px;
+    margin-right: -39%;
+    filter: brightness(0.0);
+    /* display: none; */
+}
+
+@media screen and (max-width:850px) {
+    .kkkk{
+        width: 26%;
+        margin-left: -46%;
+    }
+}
