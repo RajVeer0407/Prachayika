@@ -1,8 +1,7 @@
 {
-  "homepage": "https://github.com/RajVeer0407/Prachayika-Events.git",
+  "homepage": "https://github.com/RajVeer0407/Prachayika.git",
   "name": "prach",
   "version": "0.1.0",
-  "homepage": "http://prachayikaevents.com",
   "private": true,
   "dependencies": {
     "@emotion/core": "^11.0.0",
@@ -17,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "arrows-svg": "^1.5.6",
     "bootstrap": "^5.2.3",
+    "deploy": "^1.0.3",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
