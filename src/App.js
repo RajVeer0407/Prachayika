@@ -1,5 +1,5 @@
 import "./styles.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div className="App">
       <ScrollToTop/>
-      <BrowserRouter>
+      <HashRouter>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/service" element={<Service/>}/>
@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/wedding" element={<Wedding/>}/>
         <Route path="/theme-party" element={<ThemeParty/>}/>
         <Route path="/birthday" element={<BirthdayParty/>}/>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
