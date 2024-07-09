@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/RajVeer0407/Prachayika.git",
+  "homepage": "https://rajveer0407.github.io/Prachayika",
   "name": "prach",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +33,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
