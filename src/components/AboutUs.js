@@ -1,6 +1,7 @@
 import React from 'react'
 import "./AboutStyles.css"
 import banner from "../assets/63.jpg"
+import { Link } from "react-router-dom";
 
 function AboutUs() {
     return (
@@ -11,8 +12,7 @@ function AboutUs() {
             <div class="about-text">
                 <h1>About Us</h1>
                 <ul class="about-text-1">
-                    <li><a href="http://www.prachayikaevents.com/" className='Home-link'>Home</a></li>
-                    {/* <li>About</li> */}
+                    <li><Link to="/prachayika" className='Home-link'>Home</Link></li>
                 </ul>
             </div>
             <div className='container1'>
