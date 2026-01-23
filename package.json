@@ -17,6 +17,7 @@
     "arrows-svg": "^1.5.6",
     "bootstrap": "^5.2.3",
     "deploy": "^1.0.3",
+    "framer-motion": "^12.29.0",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",

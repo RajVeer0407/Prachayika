@@ -8,13 +8,15 @@ class Navbar extends Component {
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
-  render() { 
+  render() {
     return (
       <nav className="NavbarItems">
         <h1>
-          <a href='/'  className="Navbar-logo">Prachayika</a>
-          </h1>
- 
+          <a href="/" className="Navbar-logo">
+            Prachayika
+          </a>
+        </h1>
+
         <div className="menu-icons" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
