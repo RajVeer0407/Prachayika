@@ -9,6 +9,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Wedding from "./routes/Wedding";
 import ThemeParty from "./routes/ThemeParty";
 import BirthdayParty from "./routes/BirthdayParty";
+import LoginPage from "./routes/Authentication/Login";
+import Register from "./routes/Authentication/Register";
+
 
 export default function App() {
   return (
@@ -24,6 +27,8 @@ export default function App() {
         <Route path="/wedding" element={<Wedding />} />
         <Route path="/theme-party" element={<ThemeParty />} />
         <Route path="/birthday" element={<BirthdayParty />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );
