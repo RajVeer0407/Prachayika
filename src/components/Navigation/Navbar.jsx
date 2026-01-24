@@ -49,9 +49,11 @@ const Navbar = ({ toggleDrawer, routes }) => {
               );
             })}
           </NavRoutes>
-          <LoginButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            Login
-          </LoginButton>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <LoginButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              Login
+            </LoginButton>
+          </Link>
         </RightNav>
       </NavContainer>
     </SNavbar>

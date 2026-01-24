@@ -25,7 +25,9 @@ const Drawer = ({ isOpen, toggleDrawer, routes }) => {
               );
             })}
           </NavRoutes>
-          <LoginButton>Login</LoginButton>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <LoginButton>Login</LoginButton>
+          </Link>
         </RightNav>
       </SDrawer>
     </>
