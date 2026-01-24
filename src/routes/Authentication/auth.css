@@ -1,0 +1,116 @@
+/* Wrapper */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg,
+            rgba(159, 227, 214, 0.25),
+            rgba(255, 255, 255, 0.35));
+}
+
+/* Glass Card */
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.auth-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+    color: #1a1a1a;
+}
+
+/* Subtitle */
+.auth-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Form */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Inputs */
+.auth-input {
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.95rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.auth-input:focus {
+    border-color: #9fe3d6;
+}
+
+/* Button */
+.auth-button {
+    margin-top: 0.5rem;
+    padding: 0.9rem;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+}
+
+.auth-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.auth-link {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    .auth-wrapper {
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .auth-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1.5rem 3rem;
+    /* extra bottom padding */
+    background: linear-gradient(135deg,
+            rgba(159, 227, 214, 0.25),
+            rgba(255, 255, 255, 0.35));
+}
