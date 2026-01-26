@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./auth.css";
 
 const Register = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
   return (
     <div className="auth-wrapper">
       <div className="auth-card">
@@ -22,11 +26,45 @@ const Register = () => {
             className="auth-input"
           />
 
-          <input
-            type="password"
-            placeholder="Password"
-            className="auth-input"
-          />
+          {/* Password */}
+          <div className="input-with-icon">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              className="auth-input auth-input-password"
+            />
+            <button
+              type="button"
+              className="password-icon"
+              onClick={() => setShowPassword((prev) => !prev)}
+              aria-label={showPassword ? "Hide password" : "Show password"}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+
+          {/* Confirm Password */}
+          <div className="input-with-icon">
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              placeholder="Confirm password"
+              className="auth-input auth-input-password"
+            />
+            <button
+              type="button"
+              className="password-icon"
+              onClick={() =>
+                setShowConfirmPassword((prev) => !prev)
+              }
+              aria-label={
+                showConfirmPassword
+                  ? "Hide confirm password"
+                  : "Show confirm password"
+              }
+            >
+              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
 
           <button type="submit" className="auth-button">
             Register
