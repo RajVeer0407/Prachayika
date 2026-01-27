@@ -32,7 +32,7 @@
   z-index: 9999;
   margin-top: -20px;
 }
- 
+
 .Navbar-logo {
   color: #222;
   font-size: 2rem;
@@ -130,11 +130,13 @@ button:hover {
     font-size: 1.2rem;
     padding: 2rem 0;
   }
+
   .nav-links:hover {
     background: #01959a;
     transition: none;
   }
 
+  /*Consider using adding the classname */
   button {
     display: none;
   }
