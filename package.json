@@ -28,6 +28,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "scss": "^0.2.4",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.8",
     "svg-icon": "^0.8.2",
     "web-vitals": "^2.1.4"

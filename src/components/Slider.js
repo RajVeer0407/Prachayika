@@ -1,67 +1,73 @@
-import { useState, useEffect } from "react";
+import React from "react";
+import Slider from "react-slick";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "./slider-data";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
 
-const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slideLength = sliderData.length;
-
-  const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
-
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
-    console.log("next");
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-    console.log("prev");
-  };
-
-  function auto() {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-
-  useEffect(() => {
-    setCurrentSlide(0);
-  }, []);
-
-  useEffect(() => {
-    if (autoScroll) {
-      auto();
-    }
-    return () => clearInterval(slideInterval);
-  }, [currentSlide]);
-
+// Custom Arrow Components
+const NextArrow = ({ onClick }) => {
   return (
-    <div className="slider">
-      <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
-      <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
-      {sliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === currentSlide ? "slide current" : "slide"}
-            key={index}
-          >
-            {index === currentSlide && (
-              <div>
-                <img src={slide.image} alt="slide" className="image" />
-                <div className="contentsl">
-                  <h2>{slide.heading}</h2>
-                  <p>{slide.desc}</p>
-                  <hr />
-                  {/* <button className="--btn --btn-primary">Get Started</button> */}
-                </div>
-              </div>
-            )}
-          </div>
-        );
-      })}
+    <div className="arrow next" onClick={onClick}>
+      <AiOutlineArrowRight />
     </div>
   );
 };
 
-export default Slider;
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div className="arrow prev" onClick={onClick}>
+      <AiOutlineArrowLeft />
+    </div>
+  );
+};
+
+const EnhancedSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    pauseOnHover: true,
+    cssEase: "cubic-bezier(0.87, 0, 0.13, 1)",
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          arrows: false,
+          dots: true,
+          fade: true,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div className="slider-container">
+      <Slider {...settings}>
+        {sliderData.map((slide, index) => (
+          <div key={index} className="slide-wrapper">
+            <div className="slide-image-container">
+              <img src={slide.image} alt={slide.heading} className="slide-image" />
+              <div className="slide-overlay"></div>
+            </div>
+            <div className="slide-content">
+              <h2 className="slide-heading">{slide.heading}</h2>
+              <p className="slide-description">{slide.desc}</p>
+              <div className="slide-divider"></div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
+
+export default EnhancedSlider;
