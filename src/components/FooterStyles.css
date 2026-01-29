@@ -1,74 +1,97 @@
-.footer{
-    padding: 4rem 6rem;
-    background: #2d2d2d;
-    color: #fff;
+.footer {
+    padding: 4rem 6rem 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    color: #1a1a1a;
 }
 
-.top{
+/* TOP SECTION */
+.top {
     display: flex;
     align-items: center;
-    text-align: start;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.top i{
-    color: #fff;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-.top i:hover{
-    color: #01959a;
-}
-
-.bottom{
-    padding-top: 2rem;
     text-align: start;
+}
+
+.top h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.top p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.top i {
+    color: #333;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.top i:hover {
+    color: #01959a;
+    transform: scale(1.1);
+}
+
+/* BOTTOM SECTION */
+.bottom {
+    padding-top: 2.5rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: start;
 }
 
-.bottom div{
+.bottom div {
     display: flex;
     flex-direction: column;
 }
 
-.bottom h4{
-    font-size: 1.3rem;
-    padding: 1rem 0 0.8rem 0;
+.bottom h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.8rem;
+    color: #1a1a1a;
 }
 
-.bottom a{
+.bottom a {
     text-decoration: none;
-    color: #fafafa;
-    padding-bottom: 0.4rem;
-    font-size: 1.1rem;
+    color: #666;
+    padding-bottom: 0.5rem;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
-.footer .credit{
+.bottom a:hover {
+    color: #000;
+}
+
+/* CREDIT */
+.footer .credit {
     text-align: center;
-    border-top: .1rem solid #222;
-    color:#fff;
-    padding:2rem;
-    padding-top: 2.5rem;
-    margin-top: 1rem;
-    font-size: .8rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    color: #777;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
 }
 
-
-
-@media screen and (max-width:850px) {
-    .footer{
-        padding: 4rem 2rem;
+/* RESPONSIVE */
+@media screen and (max-width: 850px) {
+    .footer {
+        padding: 3rem 2rem 1.5rem;
     }
 
-    .footer i{
+    .top i {
         margin: 1rem 1rem 0 0;
     }
 
-    .bottom div{
+    .bottom div {
         width: 50%;
+        margin-bottom: 1.5rem;
     }
 }

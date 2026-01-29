@@ -47,7 +47,7 @@ const Footer = () => {
                     <a href="mailto:info@prachayikaevents.com" className='mail'>info@prachayikaevents.com</a>
                 </div>
             </div>
-            <div class="credit"> Prachayika Events - All Rights Reserved | Created by | Rajveer shaw </div>
+            <div className="credit"> Prachayika Events - All Rights Reserved | Created by | Rajveer shaw </div>
         </div>
     )
 }
