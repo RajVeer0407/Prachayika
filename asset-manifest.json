@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/Prachayika/static/css/main.99b76292.css",
-    "main.js": "/Prachayika/static/js/main.39e1ef0e.js",
+    "main.css": "/Prachayika/static/css/main.a1fe8604.css",
+    "main.js": "/Prachayika/static/js/main.63e39c02.js",
     "static/media/73.jpg": "/Prachayika/static/media/73.061fbcb96c145298f069.jpg",
-    "static/media/85.jpg": "/Prachayika/static/media/85.f7fe46cd2add8abd0626.jpg",
     "static/media/slide2.jpg": "/Prachayika/static/media/slide2.9fceb1bd25405d7ffb5c.jpg",
-    "static/media/bg1.jpg": "/Prachayika/static/media/bg1.7b8a6a0c60c766fac7f9.jpg",
     "static/media/63.jpg": "/Prachayika/static/media/63.615eb6f21e3cf71806ea.jpg",
+    "static/media/62.jpg": "/Prachayika/static/media/62.ba7f1da77a916e35d580.jpg",
     "static/media/45.jpg": "/Prachayika/static/media/45.701bf4ea8b24fd44c0c8.jpg",
     "static/media/58.jpg": "/Prachayika/static/media/58.ff1bb26ff79e67328f15.jpg",
     "static/media/68.jpg": "/Prachayika/static/media/68.657943c93834953374db.jpg",
@@ -21,12 +20,16 @@
     "static/media/lohri.jpg": "/Prachayika/static/media/lohri.75b81e6c1704d11d2824.jpg",
     "static/media/bday.jpg": "/Prachayika/static/media/bday.f45b0d214bc102eafe05.jpg",
     "static/media/52.jpg": "/Prachayika/static/media/52.6de3767424d34133fbf6.jpg",
+    "static/media/slick.svg": "/Prachayika/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Prachayika/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Prachayika/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Prachayika/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Prachayika/index.html",
-    "main.99b76292.css.map": "/Prachayika/static/css/main.99b76292.css.map",
-    "main.39e1ef0e.js.map": "/Prachayika/static/js/main.39e1ef0e.js.map"
+    "main.a1fe8604.css.map": "/Prachayika/static/css/main.a1fe8604.css.map",
+    "main.63e39c02.js.map": "/Prachayika/static/js/main.63e39c02.js.map"
   },
   "entrypoints": [
-    "static/css/main.99b76292.css",
-    "static/js/main.39e1ef0e.js"
+    "static/css/main.a1fe8604.css",
+    "static/js/main.63e39c02.js"
   ]
 }
