@@ -26,7 +26,9 @@ const SubRoutesContainer = styled.div`
   padding: 1rem;
   left: -1rem;
   visibility: hidden;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   opacity: 0;
   border-radius: 1rem;
   transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -35,8 +37,10 @@ const SubRoutesContainer = styled.div`
 const SMenu = styled.div`
   position: relative;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
+  color: rgb(102, 102, 102);
   font-weight: 600;
+      transition: color 0.3s;
 
   &:hover ${SubRoutesContainer} {
     visibility: visible;
@@ -46,7 +50,7 @@ const SMenu = styled.div`
 `;
 
 const MenuButton = styled.div`
-  padding: .5rem;
+  padding: 0.6rem 1.2rem;
   &:hover {
     transition: 0.3s ease;
     color: black;
@@ -58,7 +62,7 @@ const MenuButton = styled.div`
 
 const SubRoute = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: rgb(102, 102, 102);
   padding: 1rem;
   border-radius: 0.5rem;
 

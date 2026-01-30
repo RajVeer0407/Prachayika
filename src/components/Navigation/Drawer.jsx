@@ -49,13 +49,16 @@ const Backdrop = styled.div`
 
   background-color: rgba(0, 0, 0, 0.2);
 `;
+
 const SDrawer = styled.div`
   z-index: 99999;
   position: fixed;
   top: 0;
   height: 100vh;
   width: 60%;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
 
   transform: translateX(${(props) => (props.isOpen ? "0" : "-100%")});
