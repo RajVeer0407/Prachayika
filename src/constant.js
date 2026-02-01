@@ -27,6 +27,10 @@ export const routes = [
     link: "/about",
   },
   {
+    name: "Recent Events",
+    link: "/recent-events",
+  },
+  {
     name: "Contact Us",
     link: "/contact",
   },

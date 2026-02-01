@@ -11,6 +11,8 @@ import ThemeParty from "./routes/ThemeParty";
 import BirthdayParty from "./routes/BirthdayParty";
 import LoginPage from "./routes/Authentication/Login";
 import Register from "./routes/Authentication/Register";
+import RecentEvent from "./routes/RecentEvent";
+
 
 
 export default function App() {
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/birthday" element={<BirthdayParty />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/recent-events" element={<RecentEvent />} />
+
       </Routes>
     </div>
   );
