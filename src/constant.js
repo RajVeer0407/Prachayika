@@ -27,6 +27,10 @@ export const routes = [
     link: "/about",
   },
   {
+    name: "Gallery",
+    link: "/gallery",
+  },
+  {
     name: "Recent Events",
     link: "/recent-events",
   },
