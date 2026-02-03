@@ -1,20 +1,16 @@
-import Navbar from "../components/Navbar"
-import Hero from "../components/Hero";
+import React from "react";
+import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer";
+import GalleryGrid from "../components/GalleryGrid";
 
-function Gallery () {
-    return(
-        <>
-        <Navbar/>
-        <Hero 
-        cName="hero-mid"
-        heroImg="https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        title="GALLERY"
-        btnClass="hide"
-        />
-        <Footer/>
-        </>
-    )
+function Gallery() {
+  return (
+    <>
+      <Navigation />
+      <GalleryGrid />
+      <Footer />
+    </>
+  );
 }
 
 export default Gallery;
