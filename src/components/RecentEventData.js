@@ -14,7 +14,7 @@ const recentEventsData = [
     date: "20 Jan 2026",
     description: "Interactive session with industry experts.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIMj4YfqXx7zjLFe58i8TAosS5_jRpHQPvQ&s"
-  }
+  },
 ];
 
 export default recentEventsData;
