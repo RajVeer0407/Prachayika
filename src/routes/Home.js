@@ -7,6 +7,7 @@ import img40 from "../assets/54.jpg"
 import Slider from "../components/Slider";
 import Navigation from "../components/Navigation/Navigation";
 import TopBar from "../components/TopBar";
+import WhatWeDo from "../components/WhatWeDo";
 
 function Home () {
     return(
@@ -24,6 +25,7 @@ function Home () {
         btnClass="show"
         />    */}
         <Slider/>
+        <WhatWeDo/>
         <Content/>
         <Events/>
         <Footer/>
