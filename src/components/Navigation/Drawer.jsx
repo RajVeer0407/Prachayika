@@ -75,7 +75,7 @@ const NavRoute = styled(Link)`
   display: flex;
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0.5rem;
 `;
 

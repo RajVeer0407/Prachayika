@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Menu from "./Menu";
+import logo from "../../assets/PL.png";
 
 const Navbar = ({ toggleDrawer, routes }) => {
   const location = useLocation();
@@ -17,8 +18,7 @@ const Navbar = ({ toggleDrawer, routes }) => {
           </DrawerButton>
 
           <LogoContainer>
-            <img src="https://picsum.photos/40" alt="logo" /> // Replace with
-            your logo URL
+            <img src={logo} alt="logo" />
           </LogoContainer>
 
           <SNavbarBrand>Prachayika</SNavbarBrand>
@@ -93,6 +93,7 @@ const LogoContainer = styled.div`
   height: 42px;
   border-radius: 12px;
   overflow: hidden;
+  background-color: #000000;
   box-shadow: 0 4px 10px rgba(159, 227, 214, 0.4);
 
   img {
